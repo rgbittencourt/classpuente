@@ -42,6 +42,35 @@ export function manifestToProvisioningRequest(manifest, destination) {
   };
 }
 
+export function expandCourseManifest(courseManifest, manifestUrl) {
+  const errors = [];
+  if (courseManifest?.schemaVersion !== SUPPORTED_MANIFEST_VERSION) errors.push(`schemaVersion deve ser ${SUPPORTED_MANIFEST_VERSION}.`);
+  if (!Array.isArray(courseManifest?.lessons) || !courseManifest.lessons.length) errors.push('lessons deve conter pelo menos uma aula.');
+  if (!isHttpUrl(manifestUrl)) errors.push('manifestUrl deve ser uma URL HTTP(S).');
+  if (errors.length) return { ok: false, errors, manifests: [] };
+
+  const manifests = courseManifest.lessons.map((lesson, index) => ({
+    schemaVersion: SUPPORTED_MANIFEST_VERSION,
+    source: {
+      catalog: courseManifest.source?.catalog || 'ClassAcervo',
+      manifestUrl,
+      courseTitle: courseManifest.course?.title || '',
+    },
+    lesson: {
+      id: String(lesson?.id || `aula-${index + 1}`),
+      title: String(lesson?.title || `Aula ${index + 1}`),
+      url: new URL(String(lesson?.path || ''), manifestUrl).href,
+      contentVersion: String(lesson?.contentVersion || ''),
+    },
+    classnotlibro: lesson?.classnotlibro?.enabled
+      ? { enabled: true, launchUrl: lesson.classnotlibro.launchUrl }
+      : { enabled: false },
+  }));
+
+  const invalid = manifests.flatMap((manifest, index) => validateLessonManifest(manifest).errors.map((error) => `lessons[${index}]: ${error}`));
+  return invalid.length ? { ok: false, errors: invalid, manifests: [] } : { ok: true, errors: [], manifests };
+}
+
 function isHttpUrl(value) {
   try {
     const url = new URL(value);
