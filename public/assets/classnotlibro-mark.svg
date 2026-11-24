@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
-  <title>Marca do ClassNotlibro</title>
-  <desc>Caderno em arco com espiral, linhas pautadas, um traço de marca-texto e um post-it aceso.</desc>
-  <rect x="4" y="4" width="120" height="120" rx="28" fill="#fff8ed"/>
-  <g transform="translate(17.07 17.07) scale(1.0667)"><path d="M16 88V44A32 32 0 0 1 80 44V88Z" fill="#14213D"/><circle cx="24" cy="40" r="3" fill="#fff8ed"/><circle cx="24" cy="52" r="3" fill="#fff8ed"/><circle cx="24" cy="64" r="3" fill="#fff8ed"/><circle cx="24" cy="76" r="3" fill="#fff8ed"/><rect x="31" y="50" width="28" height="11" rx="2" fill="#f4b942"/><path d="M33 43H72M33 55H72M33 67H72M33 79H72" stroke="#fff8ed" stroke-width="3" stroke-linecap="round"/><g transform="rotate(-8 67 75)"><path d="M56 64H78V80L72 86H56Z" fill="#e76f51"/><path d="M78 80H72V86Z" fill="#fff8ed" opacity="0.55"/></g></g>
-</svg>
-
