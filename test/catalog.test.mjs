@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { manifestToProvisioningRequest, validateLessonManifest } from '../src/catalog.mjs';
+import { expandCourseManifest, manifestToProvisioningRequest, validateLessonManifest } from '../src/catalog.mjs';
 
 const manifest = {
   schemaVersion: 1,
@@ -38,6 +38,23 @@ test('não adiciona ClassNotlibro quando a aula não o habilita', () => {
   });
   assert.equal(result.request.classnotlibro.enabled, false);
   assert.doesNotMatch(result.request.title, /ClassNotlibro/);
+});
+
+test('resolve caminhos publicados pelo ClassAtelier a partir do manifesto', () => {
+  const result = expandCourseManifest({
+    schemaVersion: 1,
+    source: { catalog: 'ClassAcervo', generator: 'ClassAtelier' },
+    course: { title: 'TGE' },
+    lessons: [{
+      id: 'tge101',
+      title: 'Semana 1',
+      path: 'aula-01.html',
+      classnotlibro: { enabled: true, launchUrl: 'https://classnotlibro.example/lti/launch' },
+    }],
+  }, 'https://professor.github.io/curso/classpuente.json');
+  assert.equal(result.ok, true);
+  assert.equal(result.manifests[0].lesson.url, 'https://professor.github.io/curso/aula-01.html');
+  assert.equal(result.manifests[0].source.courseTitle, 'TGE');
 });
 
 
