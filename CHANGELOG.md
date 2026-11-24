@@ -2,6 +2,12 @@
 
 Todas as alterações relevantes do ClassPuente são registradas neste arquivo. O projeto segue o [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [0.2.2] - 2026-11-24
+
+### Corrigido
+
+- Barra institucional mantida fixa na base da tela, sem encobrir o conteúdo em computadores ou dispositivos móveis.
+
 ## [0.2.1] - 2026-11-24
 
 ### Alterado
