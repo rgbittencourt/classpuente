@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title>ClassPuente</title>
+  <desc>Logo do ClassPuente para fundo azul-escuro.</desc>
+  <g transform="translate(8 8) scale(1.1875)"><rect x="0" y="0" width="120" height="120" rx="28" fill="#fff8ed"/><g transform="translate(13 13)"><path d="M20 50A28 28 0 0 1 76 50" fill="none" stroke="#14213D" stroke-width="6" stroke-linecap="round"/><path d="M34 29.5V50M48 22V50M62 29.5V50" stroke="#14213D" stroke-width="3"/><path d="M10 58H86V88H72V80A24 24 0 0 0 24 80V88H10Z" fill="#14213D"/><rect x="10" y="50" width="76" height="9" rx="2" fill="#e76f51"/></g></g>
+  <text x="180" y="94" fill="#FFFFFF" font-family="'DM Sans', Inter, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-3">Class<tspan fill="#F08A70" font-family="Newsreader, Georgia, 'Times New Roman', serif" font-style="italic" font-weight="400" letter-spacing="-1">Puente</tspan></text>
+  <text x="182" y="126" fill="#D7E0EF" font-family="'DM Mono', 'Courier New', monospace" font-size="15" letter-spacing="3.2">INTEGRAÇÕES, MOODLE E LTI</text>
+</svg>
+
