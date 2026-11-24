@@ -10,6 +10,7 @@ Todas as alterações relevantes do ClassPuente são registradas neste arquivo. 
 - Ícone oficial do ClassPuente incluído como favicon da aba do navegador.
 - Cabeçalho padronizado em azul-escuro, com variante clara da marca.
 - Botão de navegação para o ClassAcervo.
+- Barra inferior institucional padronizada com o ClassAcervo.
 
 ## [0.2.0] - 2026-11-24
 
