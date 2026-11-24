@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ClassPuente — Class para Moodle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">↔</div>
+    <div><strong>ClassPuente</strong><span>Class para Moodle</span></div>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Integração assistida</p>
+      <h1>Leve suas aulas ao Moodle sem lidar com a parte técnica.</h1>
+      <p>Escolha um curso publicado pelo ClassAtelier, confira as aulas e prepare a integração com sua sala Moodle.</p>
+    </section>
+
+    <section class="card" aria-labelledby="source-title">
+      <div class="step">1</div>
+      <div class="card-body">
+        <h2 id="source-title">Curso publicado</h2>
+        <label for="manifestUrl">Endereço do manifesto do curso</label>
+        <div class="row">
+          <input id="manifestUrl" type="url" placeholder="https://…/classpuente.json" autocomplete="url">
+          <button id="loadManifest" type="button">Ler curso</button>
+        </div>
+        <p class="help">O ClassAcervo fornecerá este endereço automaticamente. Durante os testes, ele pode ser colado aqui.</p>
+        <div id="sourceStatus" class="status" role="status" hidden></div>
+      </div>
+    </section>
+
+    <section id="lessonStep" class="card" aria-labelledby="lesson-title" hidden>
+      <div class="step">2</div>
+      <div class="card-body">
+        <h2 id="lesson-title">Escolha as aulas</h2>
+        <p id="courseTitle" class="course-title"></p>
+        <div id="lessonList" class="lesson-list"></div>
+      </div>
+    </section>
+
+    <section id="destinationStep" class="card" aria-labelledby="destination-title" hidden>
+      <div class="step">3</div>
+      <div class="card-body">
+        <h2 id="destination-title">Destino no Moodle</h2>
+        <label for="moodleCourseUrl">Endereço da sala Moodle</label>
+        <input id="moodleCourseUrl" type="url" placeholder="https://moodle…/course/view.php?id=…">
+        <label for="section">Seção da sala</label>
+        <input id="section" type="text" placeholder="Ex.: Semana 1">
+        <label class="check"><input id="hiddenInitially" type="checkbox" checked> Criar inicialmente oculta para os estudantes</label>
+        <button id="preparePlan" class="primary" type="button">Preparar integração</button>
+        <div id="planStatus" class="status" role="status" hidden></div>
+      </div>
+    </section>
+
+    <section id="planStep" class="card result" aria-labelledby="plan-title" hidden>
+      <div class="step">4</div>
+      <div class="card-body">
+        <p class="eyebrow">Nada foi alterado no Moodle</p>
+        <h2 id="plan-title">Plano de integração</h2>
+        <div id="planSummary"></div>
+        <ol id="planSteps"></ol>
+        <p class="privacy">O ClassPuente não recebe senhas, textos das anotações ou dados privados dos estudantes.</p>
+      </div>
+    </section>
+  </main>
+  <footer>ClassPuente · Ecossistema Class · INOVALAB — IFSC</footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
+
