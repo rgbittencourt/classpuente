@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title>Marca do ClassPuente</title>
+  <desc>Ponte em arco: o arco da família vira estrutura, o tabuleiro aceso liga as duas margens.</desc>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="#fff8ed"/>
+  <g transform="translate(17.07 17.07) scale(1.0667)"><path d="M20 50A28 28 0 0 1 76 50" fill="none" stroke="#14213D" stroke-width="6" stroke-linecap="round"/><path d="M34 29.5V50" stroke="#14213D" stroke-width="3"/><path d="M48 22V50" stroke="#14213D" stroke-width="3"/><path d="M62 29.5V50" stroke="#14213D" stroke-width="3"/><path d="M10 58H86V88H72V80A24 24 0 0 0 24 80V88H10Z" fill="#14213D"/><rect x="10" y="50" width="76" height="9" rx="2" fill="#e76f51"/></g>
+</svg>
