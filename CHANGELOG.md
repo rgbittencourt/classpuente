@@ -2,6 +2,12 @@
 
 Todas as alterações relevantes do ClassPuente são registradas neste arquivo. O projeto segue o [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [0.2.3] - 2026-11-24
+
+### Alterado
+
+- Barra superior mantida fixa durante a rolagem, com espaço reservado para não encobrir o conteúdo.
+
 ## [0.2.2] - 2026-11-24
 
 ### Corrigido
