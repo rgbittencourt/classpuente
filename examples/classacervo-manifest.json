@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "catalog": "ClassAcervo"
+  },
+  "lesson": {
+    "id": "tge101-semana-1",
+    "title": "Semana 1 - Fundamentos: Gestão Educacional na Era Digital",
+    "url": "https://luislindner.github.io/moodle-ifsc/tedpro/TGE101/",
+    "contentVersion": "2026.11.24"
+  },
+  "classnotlibro": {
+    "enabled": true,
+    "launchUrl": "https://caderno-aula-lti-homologacao.vercel.app/lti/launch"
+  }
+}
+
+
