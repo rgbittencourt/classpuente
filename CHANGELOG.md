@@ -1,17 +1,27 @@
 # Changelog
 
-Este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
+Todas as alterações relevantes do ClassPuente são registradas neste arquivo. O projeto segue o [Versionamento Semântico](https://semver.org/lang/pt-BR/).
+
+## [0.2.1] - 2026-11-24
+
+### Alterado
+
+- Logotipo ampliado no cabeçalho para preservar a legibilidade da marca.
+- Ícone oficial do ClassPuente incluído como favicon da aba do navegador.
+- Cabeçalho padronizado em azul-escuro, com variante clara da marca.
+- Botão de navegação para o ClassAcervo.
 
 ## [0.2.0] - 2026-11-24
 
 ### Adicionado
 
-- Interface web experimental para preparar integrações Moodle.
-- Identidade visual oficial do ClassPuente.
-- Publicação via GitHub Pages.
+- Aplicação inicial do ClassPuente para planejar a integração entre o Ecossistema Class e o Moodle.
+- Marca oficial do ClassPuente.
+- Publicação pelo GitHub Pages.
 
 ## [0.1.0] - 2026-11-24
 
 ### Adicionado
 
 - Núcleo inicial de leitura do manifesto `classpuente.json` e geração de planos de integração.
+
