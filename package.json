@@ -1,0 +1,16 @@
+{
+  "name": "classpuente",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Integração segura entre o ecossistema Class e salas Moodle.",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node examples/plano-tge.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
+
