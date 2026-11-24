@@ -2,6 +2,8 @@
 
 Cada aula publicável pode fornecer um pequeno manifesto JSON. O manifesto informa ao ClassPuente tudo que ele precisa para preparar a atividade Moodle, sem exigir que o professor copie endereços ou parâmetros técnicos.
 
+Quando o ClassAtelier publica um curso, ele gera um único `classpuente.json` na raiz. Esse arquivo lista as aulas com caminhos relativos, permitindo que o mesmo pacote funcione em qualquer conta, repositório ou pasta do GitHub Pages. O ClassPuente resolve automaticamente cada caminho usando o endereço do manifesto.
+
 ## Campos
 
 - `schemaVersion`: versão do contrato.
